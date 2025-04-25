@@ -1,0 +1,180 @@
+.footer-class {
+  background-color: black;
+  width: 100%;
+  color: #fff !important;
+  padding: 50px 70px;
+  height: fit-content;
+}
+.down-Arrow-footer {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-bottom {
+    height: auto;
+    width: 100%;
+  }
+  .footer-bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .second-top-footer {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-top .second-top-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .second {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-top .second-top-footer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .second {
+      margin-top: 0;
+    }
+  }
+  .footer-bottom {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .first,
+  .second,
+  .third {
+    margin: 10px 0;
+  }
+  .first::after {
+    content: "";
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    display: block;
+  }
+  .down-Arrow-footer {
+    display: flex;
+  }
+  .footer-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    img {
+      width: fit-content;
+    }
+  }
+  .contact-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .footer-class {
+    padding: 4% 6%;
+  }
+  .payImg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .input-class {
+    width: 100%;
+  }
+  input {
+    width: 50%;
+  }
+}
+.footer-top{
+    color: white;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.footer-title{
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.first-top-footer .info{
+    margin: 20px 0 40px;
+    font-size: 16px;
+}
+
+input{
+    height: 46px;
+    width: 60%;
+    border: none;
+    padding: 20px;
+}
+button{
+    height: 48px;
+    background: transparent;
+    border: 2px solid rgb(87, 85, 85);
+    color: rgb(87, 85, 85);
+    padding: 0 5%;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.second{
+    margin-top: 25px;
+}
+.second-top-footer{
+    margin-left: 33%;
+}
+.second-top-footer .info{
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.flag{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.terms{
+    font-size: 12px;
+}
+.footer-bottom{
+    color: white;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.first .info{
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.third .info{
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.third:last-child .footer-title{
+    text-transform: none;
+}
